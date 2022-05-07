@@ -12,7 +12,7 @@
     "id": 2,
     "name": "CAR SEDAN",
     "img": "https://i.ibb.co/5Tfc7SS/car-2.png",
-    "description": "A sedan is a car with a closed body (i.e. a fixed metal roof) with the engine, passengers, and cargo in separate compartments.",
+    "description": "A sedan is a car with a closed body (i.e. a fixed metal roof) with the engine, passengers, and cargo in separate the car sedan passengersd engine whit a closed compartments.",
     "price": " $40,000",
     "quantity": 4,
     "supplierName": "Jonny Bairstow"
@@ -21,7 +21,7 @@
     "id": 3,
     "name": "HATCHBACK",
     "img": "https://i.ibb.co/KNKShHT/car-3.png",
-    "description": "A hatchback is a car body configuration with a rear door that swings upward to provide access to a cargo area.",
+    "description": "A hatchback is a car body configuration with a rear door that swings upward to provide access to a cargo hatchback configuration provide access the swings area.",
     "price": "$21,000",
     "quantity": 5,
     "supplierName": "Chris Woakes"
@@ -39,7 +39,7 @@
     "id": 5,
     "name": "TAURUS",
     "img": "https://i.ibb.co/Hx7pTF7/car-5.png",
-    "description": "Taurus is the second of the 12 astrological signs and is represented by the bull constellation. Of the four zodiac elements.",
+    "description": "Taurus is the second of the 12 astrological signs and is represented by the bull constellation. Taurus Of the four zodiac elements.",
     "price": "$25,142",
     "quantity": 3,
     "supplierName": "Ben Stokes"
@@ -66,7 +66,7 @@
     "id": 8,
     "name": "SPORT AVALON",
     "img": "https://i.ibb.co/fSpwxpZ/car-8.png",
-    "description": "The Avalon is surprising in its athleticism — with shockingly enjoyable handling and drivability. While not a sport sedan.",
+    "description": "The Avalon is surprising in its athleticism — with shockingly enjoyable handling and drivability. While not a sport AVALON sedan.",
     "price": "$33,375",
     "quantity": 10,
     "supplierName": "Eoin Morgan"
