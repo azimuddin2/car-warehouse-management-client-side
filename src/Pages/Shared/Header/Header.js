@@ -1,20 +1,40 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import logo from '../../../images/logo1.svg';
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+
+    const handleSignOut = () => {
+        signOut(auth);
+    }
+
     return (
-        <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+        <>
+            <Navbar collapseOnSelect expand="lg" sticky='top' bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand as={Link} to="/home">
                         <img src={logo} alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="#features">Features</Nav.Link>
-                            <Nav.Link href="#pricing">Pricing</Nav.Link>
+                            <Nav.Link as={Link} to="/home">Home</Nav.Link>
+                            <Nav.Link href="home#services">Services</Nav.Link>
+                            <Nav.Link href="home#experts">Experts</Nav.Link>
+                            <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
+                            <Nav.Link as={Link} to="about">About</Nav.Link>
+                            {
+                                user && <>
+                                    <Nav.Link as={Link} to="addservice">AddService</Nav.Link>
+                                    <Nav.Link as={Link} to="manage">Manage Items</Nav.Link>
+
+                                </>
+                            }
                             <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -24,15 +44,19 @@ const Header = () => {
                             </NavDropdown>
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#deets">More deets</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
-                                Dank memes
-                            </Nav.Link>
+                            {
+                                user ?
+                                    <button className='btn text-white bg-primary px-3' onClick={handleSignOut}>Sign Out</button>
+                                    :
+                                    <Nav.Link className='text-white btn btn-link bg-primary px-3' as={Link} to={'/login'}>
+                                        Login
+                                    </Nav.Link>
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
+        </>
     );
 };
 

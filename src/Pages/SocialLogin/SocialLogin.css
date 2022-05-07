@@ -1,0 +1,18 @@
+.social-logo{
+    width: 50%;
+}
+
+
+/* responsive  */
+@media screen and (max-width: 576px) { 
+    .social-logo {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .social-logo{
+        width: 100%;
+    }
+}
