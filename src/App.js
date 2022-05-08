@@ -11,6 +11,8 @@ import Blogs from './Pages/Blogs/Blogs';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import Checkout from './Pages/Checkout/Checkout';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
+import AddItem from './Pages/AddItem/AddItem';
+import ManageItem from './Pages/ManageItem/ManageItem';
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/additem' element={<AddItem></AddItem>}></Route>
+        <Route path='/manageitem' element={<ManageItem></ManageItem>}></Route>
         <Route path='/checkout' element={
           <RequireAuth>
             <Checkout></Checkout>
