@@ -3,3 +3,17 @@
     background-color: white;
     border-radius: 10px;
 }
+
+.product-btn{
+    background-color: #F7852D;
+    border: none;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.product-btn:hover{
+    background-color: rgb(58, 53, 53);
+    transition: 0.5s;
+}

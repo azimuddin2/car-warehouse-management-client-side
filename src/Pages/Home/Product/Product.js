@@ -23,7 +23,7 @@ const Product = ({ product }) => {
                 <p>Supplier: {supplierName}</p>
                 <button
                 onClick={() => navigateToProductDetail(_id)}
-                 className='btn btn-primary px-5'>UPDATE</button>
+                 className='product-btn'>UPDATE</button>
             </div>
         </div>
     );

@@ -1,3 +1,47 @@
-.slide-background {
-    background-image: linear-gradient(rgba(255, 166, 0, 0.664), rgba(255, 0, 0, 0.514) , rgba(255, 255, 0, 0.438))
+.banner-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.banner-info{
+    width: 80%;
+}
+
+.banner-title{
+    color: #F7852D;
+    font-size: 50px;
+}
+
+.search{
+    font-size: 30px;
+}
+
+.banner-button{
+    background-color: #F7852D;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.banner-button:hover{
+    background-color: rgb(58, 53, 53);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* make products responsive */
+
+@media only screen and (max-width: 576px)  {
+    .banner-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner-info{
+        width: 90%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
 }

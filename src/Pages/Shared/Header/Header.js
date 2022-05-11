@@ -5,6 +5,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import logo from '../../../images/logo1.svg';
+import './Header.css'
 
 const Header = () => {
     const [user] = useAuthState(auth);
@@ -31,6 +32,7 @@ const Header = () => {
                                 user && <>
                                     <Nav.Link as={Link} to="/additem">AddItem</Nav.Link>
                                     <Nav.Link as={Link} to="/manageitem">ManageItem</Nav.Link>
+                                    <Nav.Link as={Link} to="about">My Items</Nav.Link>
 
                                 </>
                             }
@@ -45,9 +47,9 @@ const Header = () => {
                         <Nav>
                             {
                                 user ?
-                                    <button className='btn text-white bg-primary px-3' onClick={handleSignOut}>Sign Out</button>
+                                    <button className='button' onClick={handleSignOut}>Sign Out</button>
                                     :
-                                    <Nav.Link className='text-white btn btn-link bg-primary px-3' as={Link} to={'/login'}>
+                                    <Nav.Link className='button text-white btn btn-link px-3' as={Link} to={'/login'}>
                                         Login
                                     </Nav.Link>
                             }

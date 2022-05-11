@@ -13,6 +13,7 @@ import Checkout from './Pages/Checkout/Checkout';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import AddItem from './Pages/AddItem/AddItem';
 import ManageItem from './Pages/ManageItem/ManageItem';
+import ReviewsItem from './Pages/ReviewsItem/ReviewsItem';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='reviews' element={<ReviewsItem></ReviewsItem>}></Route>
         <Route path='/product/:productId' element={<ProductDetail></ProductDetail>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>

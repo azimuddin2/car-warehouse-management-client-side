@@ -1,0 +1,15 @@
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* make products responsive */
+
+@media only screen and (max-width: 576px)  {
+    .footer{
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .footer-item{
+        margin-bottom: 20px;
+    }
+}
