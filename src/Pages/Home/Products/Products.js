@@ -1,3 +1,5 @@
+import { faRightLong } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Product from '../Product/Product';
@@ -30,7 +32,7 @@ const Products = () => {
                     <div className='review-border'></div>
                     <button className='all-review-btn'>
                         <Link className='text-white text-decoration-none
-                        ' to={'/reviews'}>See All Reviews</Link>
+                        ' to={'/reviews'}>SHOW ALL CARS<FontAwesomeIcon icon={faRightLong}></FontAwesomeIcon></Link>
                     </button>
                     <div className='review-border'></div>
                 </div>

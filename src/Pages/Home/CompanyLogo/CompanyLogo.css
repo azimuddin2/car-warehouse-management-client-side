@@ -2,7 +2,7 @@
     color: black;
     font-size: 40px;
     text-transform: capitalize;
-    border-bottom: 2px solid #F7852D;
+    border-bottom: 2px solid #ff5400;
     width: 300px;
     text-align: center;
     margin: auto;
@@ -23,7 +23,7 @@
 }
 
 .logo:hover{
-    border: 1px solid #F7852D;
+    border: 1px solid #ff5400;
     cursor: pointer;
     transition: 0.3s;
 }

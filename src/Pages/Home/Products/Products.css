@@ -7,7 +7,7 @@
     color: black;
     font-size: 40px;
     text-transform:uppercase;
-    border-bottom: 2px solid #F7852D;
+    border-bottom: 2px solid #ff5400;
     width: 360px;
     text-align: center;
     margin: auto;
@@ -26,7 +26,7 @@
 }
 
 .review-border{
-    width: 43%;
+    width: 42%;
     height: 2px;
     background-color: rgb(58, 53, 53);
     margin: auto;
@@ -34,7 +34,7 @@
 }
 
 .all-review-btn:hover{
-    background-color: #F7852D;
+    background-color: #ff5400;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -58,7 +58,7 @@
     }
     
     .review-border{
-        width: 29%;
+        width: 24%;
     }
 }
 

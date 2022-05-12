@@ -5,12 +5,13 @@
 }
 
 .product-btn{
-    background-color: #F7852D;
+    background-color: #ff5400;
     border: none;
     color: white;
-    padding: 6px 20px;
+    padding: 6px 24px;
     border-radius: 3px;
     font-weight: 500;
+    width: 100%;
 }
 
 .product-btn:hover{

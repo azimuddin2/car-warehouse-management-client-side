@@ -1,0 +1,53 @@
+.app-background{
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.background-image{
+    width: 100%;
+}
+
+.app{
+    position: absolute;
+    top: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   
+}
+
+.app-image{
+    margin-top: -80px;
+    margin-left: 80px;
+}
+
+.app-info{
+    padding: 60px;
+}
+
+/* make products responsive */
+
+@media only screen and (max-width: 576px)  {
+    .app{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .app-image{
+        margin-top: 0px;
+        margin-left: 0px;
+
+    }
+    .app-info{
+        padding: 10px;
+    }
+
+    .app-background{
+        height: 750px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+
+    .background-image{
+        width: 100%;
+        height: 180px;
+    }
+
+}

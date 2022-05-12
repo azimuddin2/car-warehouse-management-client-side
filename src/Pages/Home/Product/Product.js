@@ -1,3 +1,5 @@
+import { faArrowsLeftRight, faArrowsLeftRightToLine } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Product.css';
@@ -23,7 +25,8 @@ const Product = ({ product }) => {
                 <p>Supplier: {supplierName}</p>
                 <button
                 onClick={() => navigateToProductDetail(_id)}
-                 className='product-btn'>UPDATE</button>
+                 className='product-btn'>UPDATE <FontAwesomeIcon
+                 icon={faArrowsLeftRight}></FontAwesomeIcon></button>
             </div>
         </div>
     );

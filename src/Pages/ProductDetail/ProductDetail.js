@@ -11,12 +11,11 @@ const ProductDetail = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data));
-    }, [])
+    }, [item])
 
     const handleQuantityStockItem = event => {
         event.preventDefault();
         let newQuantity = parseInt(event.target.quantity.value);
-        // console.log(newQuantity)
         const updatedQuantity = (item.quantity + newQuantity);
         console.log(updatedQuantity);
 
@@ -26,7 +25,7 @@ const ProductDetail = () => {
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify({updatedQuantity})
+            body: JSON.stringify({ updatedQuantity })
         })
             .then(res => res.json())
             .then(data => {
@@ -34,9 +33,6 @@ const ProductDetail = () => {
                 event.target.reset();
             })
     }
-
-
-
 
     const handleQuantityDeleteItem = event => {
         event.preventDefault();
@@ -50,7 +46,7 @@ const ProductDetail = () => {
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify({updatedQuantity})
+            body: JSON.stringify({ updatedQuantity })
         })
             .then(res => res.json())
             .then(data => {
@@ -58,8 +54,6 @@ const ProductDetail = () => {
                 event.target.reset();
             })
     }
-
-
 
     return (
         <div className='mx-auto w-50 bg-light bg-gradient p-5 mt-5'>
@@ -73,13 +67,8 @@ const ProductDetail = () => {
             <form onSubmit={handleQuantityStockItem}>
                 <input type="number" name="number" id="quantity" />
                 <input className='btn btn-primary ms-5' type="submit" value="Quantity Add" />
-
             </form>
-
-            
-            <input onClick={handleQuantityDeleteItem}  className='btn btn-primary ms-5' type="submit" value="Quantity Delete" />
-
-
+            <input onClick={handleQuantityDeleteItem} className='btn btn-primary ms-5' type="submit" value="Quantity Delete" />
             <br />
             <br />
             <Link to='/checkout'>
