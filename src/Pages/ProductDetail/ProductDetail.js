@@ -76,9 +76,9 @@ const ProductDetail = () => {
 
                 <form onSubmit={handleQuantityStockItem}>
                     <input className='input-field' type="number" name="number" id="quantity" placeholder='Quantity Add:' />
-                    <input className='quantity' type="submit" value="Quantity Add" />
+                    <input className='quantity-add' type="submit" value="Quantity Add" />
                 </form>
-                <input onClick={handleQuantityDeleteItem} className='quantity' type="submit" value="Quantity Delete" />
+                <input onClick={handleQuantityDeleteItem} className='quantity-delete' type="submit" value="Quantity Delete" />
                 {/* <Link to='/checkout'>
                 <button className='btn btn-primary'>Checkout</button>
             </Link> */}

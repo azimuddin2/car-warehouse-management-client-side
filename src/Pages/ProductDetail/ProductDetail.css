@@ -13,7 +13,23 @@
     border-radius: 5px;
 }
 
-.quantity{
+.quantity-add{
+    background-color: rgb(58, 53, 53);
+    border: none;
+    color: white;
+    padding: 6px 24px;
+    border-radius: 3px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.quantity-add:hover {
+    background-color: #ff5400;
+    transition: 0.3s;
+}
+
+.quantity-delete{
     background-color: #ff5400;
     border: none;
     color: white;
@@ -24,7 +40,7 @@
     margin-bottom: 12px;
 }
 
-.quantity:hover{
+.quantity-delete:hover{
     background-color: rgb(58, 53, 53);
     transition: 0.5s;
 }

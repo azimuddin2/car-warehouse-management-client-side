@@ -25,25 +25,23 @@ const ManageItem = () => {
 
     return (
         <div className='container'>
-            <h1>Manage Item</h1>
+            <h1 className='makes-title mt-5'>MANAGE ITEMS</h1>
             <div className='products-container'>
                 {
-                    products.map(product => <div className='product-containerm ' key={product._id}>
+                    products.map(product => <div className='product-container m-3' key={product._id}>
                         <div className=''>
                             <div className='p-2 rounded-3'>
                                 <img className='w-100 bg-light rounded-3 p-5' src={product.img} alt="" />
                             </div>
-                            <div className=' p-4 pt-0'>
-                            <h5>{product.name}</h5>
-                            <p>{product.price}</p>
-                            <p>{product.description}</p>
-                            <p>{product.quantity}</p>
-                            <p>{product.supplierName}</p>
-                            <button className='product-btn' onClick={() => handleDelete(product._id)}>Delete <FontAwesomeIcon icon={faTrashCan}></FontAwesomeIcon></button>
+                            <div className='p-4 pt-0'>
+                                <h5>{product.name}</h5>
+                                <p>{product.price}</p>
+                                <p>{product.description}</p>
+                                <p>{product.quantity}</p>
+                                <p>{product.supplierName}</p>
+                                <button className='product-btn' onClick={() => handleDelete(product._id)}>Delete <FontAwesomeIcon icon={faTrashCan}></FontAwesomeIcon></button>
                             </div>
-                            
                         </div>
-
                     </div>)
                 }
             </div>

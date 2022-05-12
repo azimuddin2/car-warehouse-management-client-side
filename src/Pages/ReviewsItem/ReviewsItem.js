@@ -15,7 +15,7 @@ const ReviewsItem = () => {
     return (
         <div id='products'>
             <div className='container'>
-                <h1 className='text-center pt-5'>products Items</h1>
+                <h1 className='product-title text-center pt-5'>car Items</h1>
                 <div className='products-container'>
                     {
                         products.map(product => <Product

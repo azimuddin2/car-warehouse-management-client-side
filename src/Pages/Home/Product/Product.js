@@ -18,7 +18,7 @@ const Product = ({ product }) => {
                 <img className='w-100 bg-light rounded-3 p-5' src={img} alt="" />
             </div>
             <div className='p-4 pt-0'>
-                <h2>{name}</h2>
+                <h5>{name}</h5>
                 <p>Price: {price}</p>
                 <p>{description}</p>
                 <p>Quantity: {quantity}</p>
