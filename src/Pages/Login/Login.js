@@ -39,7 +39,7 @@ const Login = () => {
     }
 
     if (user) {
-        navigate('/checkout');
+        navigate('/home');
     }
 
     if (error) {

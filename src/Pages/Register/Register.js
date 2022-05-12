@@ -66,7 +66,7 @@ const Register = () => {
                 </Form.Group>
 
                 <Form.Group className={agree ? '' : 'text-danger'} controlId="formBasicCheckbox">
-                    <Form.Check onClick={() => setAgree(!agree)} type="checkbox" label="Accept Genius Car Terms and conditions" id='terms' />
+                    <Form.Check onClick={() => setAgree(!agree)} type="checkbox" label="Accept Car Terms and conditions" id='terms' />
                 </Form.Group>
 
                 <Button

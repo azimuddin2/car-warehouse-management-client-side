@@ -1,0 +1,41 @@
+.product-detail{
+    width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.input-field{
+    width: 100%;
+    margin-bottom: 12px;
+    border: 1px solid rgba(104, 96, 96, 0.644);
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.quantity{
+    background-color: #ff5400;
+    border: none;
+    color: white;
+    padding: 6px 24px;
+    border-radius: 3px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.quantity:hover{
+    background-color: rgb(58, 53, 53);
+    transition: 0.5s;
+}
+
+/* make products responsive */
+@media only screen and (max-width: 576px)  {
+    .product-detail{
+        width: 90%;
+    }
+
+    .mange-items{
+        width: 80%;
+    }
+}
