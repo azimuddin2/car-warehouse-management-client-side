@@ -56,12 +56,11 @@ const Login = () => {
             await sendPasswordResetEmail(email);
             toast('Sent email');
         }
-        else{
+        else {
             toast('Please enter your email address!');
         }
     }
 
-    
     return (
         <div className='form bg-light p-5 mt-5'>
             <h1 className='text-success text-center mb-4'>Please Login</h1>

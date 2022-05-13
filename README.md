@@ -1,8 +1,8 @@
 # SHE CAR WAREHOUSE
-Project Live Site Link(https://github.com/facebook/create-react-app)
+Project Live Site Link(https://car-warehouse-management-site.web.app/)
 
 # Used on the website
-1. React
+1.React
 2.firebase
 3.react router
 4.react bootstrap

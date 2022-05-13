@@ -72,7 +72,6 @@ const ProductDetail = () => {
                 <p>{item.description}</p>
                 <p>Quantity: {item.quantity}</p>
                 <p>Supplier: {item.supplierName}</p>
-
                 <form onSubmit={handleQuantityStockItem}>
                     <input className='input-field' type="number" name="number" id="quantity" placeholder='Quantity Add:' />
                     <input className='quantity-add' type="submit" value="Quantity Add" />
