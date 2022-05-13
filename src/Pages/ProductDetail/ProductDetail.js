@@ -9,7 +9,7 @@ const ProductDetail = () => {
     const [item, setItem] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/item/${productId}`;
+        const url = `https://murmuring-dusk-95457.herokuapp.com/item/${productId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data));
@@ -23,7 +23,7 @@ const ProductDetail = () => {
         console.log(updatedQuantity);
 
         if (proceed) {
-            const url = `http://localhost:5000/item/${productId}`;
+            const url = `https://murmuring-dusk-95457.herokuapp.com/item/${productId}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -47,7 +47,7 @@ const ProductDetail = () => {
         console.log(updatedQuantity);
 
         if (proceed) {
-            const url = `http://localhost:5000/item/${productId}`;
+            const url = `https://murmuring-dusk-95457.herokuapp.com/item/${productId}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {

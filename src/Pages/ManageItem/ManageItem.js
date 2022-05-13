@@ -10,7 +10,7 @@ const ManageItem = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `http://localhost:5000/item/${id}`
+            const url = `https://murmuring-dusk-95457.herokuapp.com/item/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

@@ -10,7 +10,7 @@ const Products = () => {
     const item = products.slice(0, 6);
 
     useEffect(() => {
-        fetch('http://localhost:5000/item')
+        fetch('https://murmuring-dusk-95457.herokuapp.com/item')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
