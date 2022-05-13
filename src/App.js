@@ -14,6 +14,7 @@ import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import AddItem from './Pages/AddItem/AddItem';
 import ManageItem from './Pages/ManageItem/ManageItem';
 import ReviewsItem from './Pages/ReviewsItem/ReviewsItem';
+import MyItems from './Pages/MyItems/MyItems';
 
 
 function App() {
@@ -24,13 +25,18 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='reviews' element={<ReviewsItem></ReviewsItem>}></Route>
-        <Route path='/product/:productId' element={<ProductDetail></ProductDetail>}></Route>
+        <Route path='/product/:productId' element={
+          <RequireAuth>
+            <ProductDetail></ProductDetail>
+          </RequireAuth>
+        }></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/additem' element={<AddItem></AddItem>}></Route>
         <Route path='/manageitem' element={<ManageItem></ManageItem>}></Route>
+        <Route path='/myitem' element={<MyItems></MyItems>}></Route>
         <Route path='/checkout' element={
           <RequireAuth>
             <Checkout></Checkout>

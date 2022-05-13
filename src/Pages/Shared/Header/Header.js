@@ -27,12 +27,12 @@ const Header = () => {
                             <Nav.Link as={Link} to="/home">Home</Nav.Link>
                             <Nav.Link href="home#products">Products</Nav.Link>
                             <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
-                            <Nav.Link as={Link} to="about">About</Nav.Link>
+                            <Nav.Link as={Link} to="/about">About</Nav.Link>
                             {
                                 user && <>
                                     <Nav.Link as={Link} to="/additem">AddItem</Nav.Link>
                                     <Nav.Link as={Link} to="/manageitem">ManageItem</Nav.Link>
-                                    <Nav.Link as={Link} to="about">MyItems</Nav.Link>
+                                    <Nav.Link as={Link} to="myitem">MyItems</Nav.Link>
 
                                 </>
                             }

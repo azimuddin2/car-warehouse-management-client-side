@@ -6,7 +6,6 @@ import './ProductDetail.css'
 
 const ProductDetail = () => {
     const { productId } = useParams();
-    console.log(productId)
     const [item, setItem] = useState({});
 
     useEffect(() => {
@@ -78,10 +77,7 @@ const ProductDetail = () => {
                     <input className='input-field' type="number" name="number" id="quantity" placeholder='Quantity Add:' />
                     <input className='quantity-add' type="submit" value="Quantity Add" />
                 </form>
-                <input onClick={handleQuantityDeleteItem} className='quantity-delete' type="submit" value="Quantity Delete" />
-                {/* <Link to='/checkout'>
-                <button className='btn btn-primary'>Checkout</button>
-            </Link> */}
+                <input onClick={handleQuantityDeleteItem} className='quantity-delete' type="submit" value="Quantity Delivered" />
             </div>
             <div className='review-button'>
                 <div className='review-border'></div>
