@@ -1,6 +1,15 @@
 # SHE CAR WAREHOUSE
 Project Live Site Link(https://github.com/facebook/create-react-app)
 
+# Used on the website
+1.React
+2.firebase
+3.react router
+4.react bootstrap
+5.node
+6.express
+7.mongodb 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
