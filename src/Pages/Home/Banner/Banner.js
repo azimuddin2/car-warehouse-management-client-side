@@ -9,7 +9,7 @@ const Banner = () => {
         <div className='container pt-5 pb-5'>
             <div className='banner-container'>
                 <div className='banner-info'>
-                    <h4 className='search'>Search your...</h4>
+                    <h4 className='search'>Search your car...</h4>
                     <h1 className='banner-title'>DREAM CAR</h1>
                     <p>A show car, sometimes called a dream car, is a custom made automobile created specifically for public display, rather than sale. They are shown at auto shows and other exhibitions. Show cars can either come from car companies or from private individuals</p>
                     <button className='banner-button'> BROWSE INVENTORY <FontAwesomeIcon icon={faRightLong}></FontAwesomeIcon></button>
